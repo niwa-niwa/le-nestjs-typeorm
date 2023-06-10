@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  le-db:
+    image: mysql:8.0-debian
+    hostname: le-mysql8
+    ports:
+      - 3306:3306
+    environment:
+      - TZ=Asia/Tokyo
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=nestdb
+    volumes:
+      - le-db-volume:/var/lib/mysql
+
+volumes:
+  le-db-volume:
+    name: le-db-data
+    driver: local
