@@ -1,0 +1,15 @@
+{
+  "name": "le-nestjs-typeorm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "nest": "nest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/cli": "^9.5.0"
+  }
+}
