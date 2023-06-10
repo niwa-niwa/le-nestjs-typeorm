@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "nest": "nest"
+    "nest": "npm --prefix ./backend run nest",
+    "backend": "npm --prefix ./backend run"
   },
   "keywords": [],
   "author": "",
