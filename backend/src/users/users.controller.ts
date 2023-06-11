@@ -5,11 +5,14 @@ import {
   HttpStatus,
   Body,
   HttpException,
+  UseGuards,
 } from "@nestjs/common";
 import { CreateUserDTO, LoginUserDTO } from "./users.dto";
 import { UsersService } from "./users.service";
 import { User } from "./user.entity";
+import { AuthGuard } from "src/auth/auth.guard";
 
+@UseGuards(AuthGuard)
 @Controller("users")
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
